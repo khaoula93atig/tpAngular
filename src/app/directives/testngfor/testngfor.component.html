@@ -1,0 +1,8 @@
+
+<ol>
+  <li [ngClass]=" {'head': first , 'pair':isOdd ,'impair': !isOdd}" *ngFor="let serie of series ; let first =first;
+  let isOdd = odd;
+  ">
+      {{serie.name}} : {{serie.type}}
+  </li>
+</ol>

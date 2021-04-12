@@ -1,0 +1,15 @@
+<div class="alert alert-danger">
+<p [hidden]='isHidden'>{{message}}</p>
+</div>
+<div (click)="alerte()"
+class="alert alert-warning">
+  <app-second></app-second>
+</div>
+<button class="btn btn-primary"
+(click)="affichercacher()"
+>
+  afficher cacher
+</button>
+<input type="text" #monInput>
+<div (click)="ShowInputContent(monInput.value)">
+  le contenu de l'input est : {{inputContent}} </div>

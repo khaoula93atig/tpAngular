@@ -1,0 +1,18 @@
+<p>color works!</p>
+
+<div [style.backgroundColor]="coler">
+  hello color # {{contenutext.value}}
+</div>
+
+<input (change)="changeColor(contenutext.value)"
+ type="text" #contenutext class="form-control">
+
+ <input [(ngModel)]="coler"
+ type="color" class="form-control">
+
+<button (click)="changeColor(defaultColer)"
+class="btn btn-primary">rest color</button>
+
+<button
+(click)="recivecolor()"
+class="btn btn-dark">je suis la couleur</button>
