@@ -27,9 +27,10 @@ import { TestngifComponent } from './directives/testngif/testngif.component';
 import { TestngforComponent } from './directives/testngfor/testngfor.component';
 import { RandomAgePipe } from './pipes/random-age.pipe';
 import { DefaultImagePipe } from './cv/pipes/default-image.pipe';
-import { LoggerService } from './services/logger.service';
 import { TodoComponent } from './todo/todo/todo.component';
 import { EmbaucheComponent } from './cv/embauche/embauche.component';
+import { HeaderComponent } from './components/header/header.component';
+import { DetailsCvComponent } from './cv/details-cv/details-cv.component';
 
 
 @NgModule({
@@ -57,7 +58,9 @@ import { EmbaucheComponent } from './cv/embauche/embauche.component';
     RandomAgePipe,
     DefaultImagePipe,
     TodoComponent,
-    EmbaucheComponent
+    EmbaucheComponent,
+    HeaderComponent,
+    DetailsCvComponent
   ],
   imports: [
     BrowserModule,

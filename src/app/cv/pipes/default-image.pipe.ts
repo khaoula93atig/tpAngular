@@ -6,7 +6,7 @@ const DEFAULT_PATH = 'cv.png';
 })
 export class DefaultImagePipe implements PipeTransform {
 
-  transform(path: any): any{
+  transform(path: string): string{
     if (path.trim().length){
       return path;
     }else{
