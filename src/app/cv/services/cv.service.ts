@@ -15,5 +15,16 @@ export class CvService {
   } getCvs():Cv[]{
     return this.cvs;
   }
+  getByID(id:any) : Cv {
+    const cv: any = this.cvs.find(
+      (cv) => cv.id == id);
+    return cv;
+
+  }
+  deleteCV(cv:Cv): void{
+    const index = this.cvs.indexOf(cv);
+    this.cvs.splice(index, 1);
+
+  }
 
 }

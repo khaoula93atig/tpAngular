@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { Cv } from '../model/cv';
+
 import { EmbaucheService } from '../services/embauche.service';
 
 @Component({
@@ -12,12 +14,18 @@ export class DetailComponent implements OnInit {
 
   @Input() cv : Cv =new Cv;
 
+
   constructor(
     private embservice :EmbaucheService,
-    private toastr:ToastrService
+    private toastr:ToastrService,
+
   ) { }
 
+
+
   ngOnInit(): void {
+
+
   }
 
   embaucher(){
@@ -27,5 +35,7 @@ export class DetailComponent implements OnInit {
       this.toastr.warning(` ${this.cv.name} ${this.cv.firstname} est deja preselectionne`);
     }
   }
+
+
 
 }
