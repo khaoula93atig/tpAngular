@@ -1,0 +1,7 @@
+<form #monFormulaire="ngForm">
+  email : <input required minlength="3" ngModel name="email" type="email" class="form-control" />
+  password :<input ngModel required minlength="4" name="password" type="text" class="form-control" />
+  <button [disabled]=!monFormulaire.valid (click)="processForm(monFormulaire)" class="btn btn-primary">
+    Envoyer
+  </button>
+</form>

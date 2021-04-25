@@ -31,6 +31,7 @@ import { TodoComponent } from './todo/todo/todo.component';
 import { EmbaucheComponent } from './cv/embauche/embauche.component';
 import { HeaderComponent } from './components/header/header.component';
 import { DetailsCvComponent } from './cv/details-cv/details-cv.component';
+import { TestFormComponent } from './components/test-form/test-form.component';
 
 
 @NgModule({
@@ -60,7 +61,8 @@ import { DetailsCvComponent } from './cv/details-cv/details-cv.component';
     TodoComponent,
     EmbaucheComponent,
     HeaderComponent,
-    DetailsCvComponent
+    DetailsCvComponent,
+    TestFormComponent
   ],
   imports: [
     BrowserModule,
